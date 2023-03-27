@@ -2,572 +2,167 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thean</title>
-
-    <!-- link reset css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- css -->
-    <link rel="stylesheet" href="./asscet/css/grid.css">
-    <link rel="stylesheet" href="./asscet/css/main.css">
-    <link rel="stylesheet" href="./asscet/css/res.css">
-
-
-    <link rel="icon" href="asscet/img/avatar.jpg" type="img/x-icon">
-    <!-- font icon -->
-    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<!-- icon -->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<title>Document</title>
 </head>
 
 <body>
-    <input type="checkbox" name="" id="check-box-display" class="checkdisplay">
-    <input type="checkbox" name="" id="check-box-display-2" class="checkdisplay-2">
-
-    <main class="main">
-        <label for="check-box-display" class="display">☾</label>
-        <!-- <label for="check-box-display-2" class="display-2">Giao Diện</label> -->
-
-        <div class="grid wide">
-            <div class="row">
-                <div class="col l-12 m-12 c-12">
-                    <!-- phần giới thiệu -->
-                    <div class="intro">
-                        <!-- phần avt - họ tên -->
-                        <div class="intro-user">
-                            <div class="intro__img">
-                                <img class="intro__img-img" title="Avatar by Thean" src="./asscet/img/avt.jpg" alt="ảnh đại diên">
-                            </div>
-                            <div class="intro-user__name">
-                                <h1 class="intro-user__name-ten">Trần Hữu Đang</h1>
-                                <span class="intro-user__name-position">Software Developer</span>
-
-                                <!-- <a href=" " class="intro-user__name-ctu">
-                                        <img class="intro-user__name-ctu-img" title=" " src="./asscet/img/CTUT.png" alt=" ">
-                                    </a> -->
-
-                                <div class="intro__icon-list">
-                                    <a href="https://www.facebook.com/dangdeveloper/" class="intro__icon-link intro__icon facebook">
-                                        <div class="intro__icon-header">Facebook</div>
-                                        <span class="intro__icon-item"><i class="intro__icon-item-icon fab fa-facebook-f"></i></span>
-                                    </a>
-                                    <a href="https://www.tiktok.com/@theanishtar/" class="intro__icon-link intro__icon Tiktok">
-                                        <div class="intro__icon-header">Tiktok</div>
-                                        <span class="intro__icon-item"><i class="intro__icon-item-icon fab fa-tiktok"></i></span>
-                                    </a>
-
-
-                                    <!-- <a href="https://www.instagram.com/theanishtar/" class="intro__icon-link intro__icon Instagram">
-                                            <div class="intro__icon-header">Instagram</div>
-                                            <span class="intro__icon-item"><i class="intro__icon-item-icon fab fa-instagram"></i></span>
-                                        </a> -->
-
-                                    <a href="https://linkedin.com/in/tranhuudang" class="intro__icon-link intro__icon facebook">
-                                        <div class="intro__icon-header">Linkedin</div>
-                                        <span class="intro__icon-item"><i class="intro__icon-item-icon fab fa-linkedin"></i></span>
-                                    </a>
-
-
-                                    <a href="https://github.com/theanishtar/" class="intro__icon-link intro__icon Github">
-                                        <div class="intro__icon-header">Github</div>
-                                        <span class="intro__icon-item"><i class="intro__icon-item-icon fab fa-github"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- phần thông tin liên hệ -->
-                        <div class="intro-contact">
-                            <div class="row">
-                                <div class="col l-8">
-                                    <div class="intro-contact__item">
-                                        <div class="intro-contact__item-header">Email</div>
-                                        <div class="intro-contact__item-contair">dangtt135@gmail.com</div>
-                                    </div>
-                                </div>
-                                <div class="col l-4">
-                                    <div class="intro-contact__item">
-                                        <div class="intro-contact__item-header">Ngày Sinh</div>
-                                        <div class="intro-contact__item-contair">XX/XX/2003</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col l-8">
-                                    <div class="intro-contact__item">
-                                        <div class="intro-contact__item-header">Địa chỉ</div>
-                                        <div class="intro-contact__item-contair">TP Cần Thơ, Việt Nam</div>
-                                    </div>
-                                </div>
-
-                                <div class="col l-4">
-
-                                    <div class="intro-contact__item">
-                                        <div class="intro-contact__item-header">Số điện thoại</div>
-                                        <div class="intro-contact__item-contair">039202xxxx</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row ">
-
-
-                <div class="col l-2 navigation">
-                    <ul class="navigation__list">
-                        <label for="checkbox-item1" class="navigation-item active "> 
-                                    <lord-icon
-                                       src="https://cdn.lordicon.com/eszyyflr.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Bản thân</span>
-                            </label>
-                        <label for="checkbox-item2" class="navigation-item "> 
-                              
-                                    <lord-icon
-                                       src="https://cdn.lordicon.com/wxnxiano.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Học vấn</span>
-                              
-                                </label>
-
-                        <label for="checkbox-item3" class="navigation-item"> 
-                                   <lord-icon
-                                       src="https://cdn.lordicon.com/iltqorsz.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Dự án</span>
-   
-                               </label>
-
-                        <label for="checkbox-item4" class="navigation-item "> 
-                                   <lord-icon
-                                       src="https://cdn.lordicon.com/rjzlnunf.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Sở thích</span>
-                               </label>
-
-                    </ul>
-                </div>
-
-                <div class="col l-10 ">
-
-                    <div class="information">
-
-                        <!-- bản thân -->
-                        <div id=" self-id" class="js-active active self">
-                            <ul class="self__list">
-                                <li class="self-item">
-                                    <h1 class="self-item-heading">Giới thiệu</h1>
-                                    <span class="self-item-heading-text">   Xin chào ! Mình hiện là sinh viên ngành công nghệ thông tin, 
-                                            mình có sở thích về lập trình. 
-                                            Những năm cấp 3 mình là một thành viên trong đội ôn thi học sinh giỏi môn "Lập trình Passcal", 
-                                            từ đó mình ngày càng thích tìm hiểu và phát triển bản thân trở thành một lập trình viên chuyên nghiệp. 
-                                            Mơ ước của mình là tạo ra những sản phẩm tuyệt vời góp phần xây dựng kỷ nguyên công nghệ mới!</p>
-   
-                                       </li>
-                                       <li class="self-item">
-                                           <h2 class="self-item-body">Những chứng chỉ nổi bật của mình</h2>
-                                           <div class="row self-row">
-                                               <div class="col l-6">
-                                                <div class="zoom">
-
-                                                    <a href="https://theanishtar.github.io/Clock/" class="self-item-body-link">
-                                                        <img src="./asscet/img/cert/Tran-Huu-Dang--SQL-Fundamentals-.png" alt="" class="self-item-body-img">
-                                                    </a>
-                                                    <span class="self-item-body-text">SQL Fundamentals</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Calculator/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/CertificateOfCompletion_Excel Es.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Excel Essential</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Todolist/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/CodeLearn_javafundment.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Java Fundment</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Clock/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/GitHub_Tutorial_for_Beginners.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">GitHub Tutorial</span>
-                        </div>
-
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Calculator/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/OfficePowerPoint 2016.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Office PowerPoint 2016</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Todolist/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/Git_Training.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Git Training</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Todolist/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/DataScience.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Data Science</span>
-                        </div>
-                    </div>
-
-                    <div class="col l-6">
-                        <div class="zoom">
-
-                            <a href="https://theanishtar.github.io/Todolist/" class="self-item-body-link">
-                                <img src="./asscet/img/cert/Machine Learning with Python.png" alt="" class="self-item-body-img">
-                            </a>
-                            <span class="self-item-body-text">Machine Learning with Python</span>
-                        </div>
-
-                    </div>
-                </div>
-                </li>
-                </ul>
-            </div>
-
-            <!-- hoc van -->
-            <div id=" Education-id" class="js-active  Education">
-                <h1 class="Education-header">Học Vấn</h1>
-                <ul class="Education-list">
-                    <h3 class="Education__item-head">
-                        <img class="Education__item-head-img" src="https://hopcodedao.github.io/My-Info/InFo_files/icon-education.svg" alt=""> Giáo dục
-                    </h3>
-                    <li class="Education__item">
-                        <div class="Education__item-body">
-                            <div class="Education__item-body-h4">Trường Cao đẳng thực hành FPT Polytechnic</div>
-                            <div class="Education__item-body-note">09/2021 - Nay</div>
-                            <span class="Education__item-body-text">Mình hiểu rõ hơn về định hướng ngành học nhờ các thầy cô tại trường.</span>
-                        </div>
-                </ul>
-                <ul class="Education-list">
-                    <h3 class="Education__item-head">
-                        <img class="Education__item-head-img" src="https://hopcodedao.github.io/My-Info/InFo_files/bag.svg" alt=""> Kinh Nghiệm
-                    </h3>
-                    <li class="Education__item">
-                        <div class="Education__item-body">
-                            <div class="Education__item-body-h4">Tham gia cuộc thi "Vô địch tin học văn phòng thế giới MOS-2022"</div>
-                            <div class="Education__item-body-note">15 - 05 - 2022 </div>
-                            <span class="Education__item-body-text">20222 đánh dấu cột mốc quan trọng của mình với việc tham gia thi MOS tại "Trường cao đẳng Nova - Tp-HCM",
-                                                rất may mắn vì mình đã nhận chứng chỉ MICROSOFT với số điểm 871/1000</span>
-                        </div>
-                    </li>
-
-                    <li class="Education__item">
-                        <div class="Education__item-body">
-                            <div class="Education__item-body-h4">Đạt giải thưởng "Khuyến khích khu vực Đồng bằng sông cửu long MOS - 2022"</div>
-                            <div class="Education__item-body-note">29 - 06 - 2022 </div>
-                            <span class="Education__item-body-text">Trong cuộc thi MOS hồi tháng 5, mình may mắn đạt top khu vực với giải khuyến khích trong kì thi này! Mình được gửi thư mời từ BTC tham dự lễ trao giải tại FPT University Can Tho</span>
-                        </div>
-                    </li>
-
-                    <li class="Education__item">
-                        <div class="Education__item-body">
-                            <div class="Education__item-body-h4">Tutor các môn học tại trường</div>
-                            <div class="Education__item-body-note">2021 - Nay </div>
-                            <span class="Education__item-body-text">Từ năm nhất mình được sự tín nhiệm từ các giảng viên nên đã được chọn Tutor Online cho các môn học như: Javaswing, MS SQL, JavaScript, Java Core, OOP...</span>
-                        </div>
-                    </li>
-
-                    <li class="Education__item">
-                        <div class="Education__item-body">
-                            <div class="Education__item-body-h4">Tham gia huấn luyện "Team thủ lĩnh FPOLY"</div>
-                            <div class="Education__item-body-note">2022 </div>
-                            <span class="Education__item-body-text">Với một lớp trưởng mình được mời tham gia huấn luyện team thủ lĩnh tại Đà Lạt, đến với cuộc tập huấn mình được training khả năng xử lý tình huống, học hỏi kiến thức lãnh đạo từ nhà trường tổ chức</span>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <!-- <div class="Education__footer">
-                                    <div class="Education__footer-item">
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 60% ">
-                                                <span>HTML</span>
-                                                <span>60%</span>
-                                            </div>
-                                        </div>
-                
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 50% ">
-                                                <span>css</span>
-                                                <span>50%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 20% ">
-                                                <span>Javascript</span>
-                                                <span>20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 50% ">
-                                                <span>C</span>
-                                                <span>50%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 65% ">
-                                                <span>C#</span>
-                                                <span>65%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 30% ">
-                                                <span>python</span>
-                                                <span>30%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 40% ">
-                                                <span>Java</span>
-                                                <span>40%</span>
-                                            </div>
-                                        </div>
-                                        <div class="chart">
-                
-                                            <div class="chart-item" style="--percent: 40% ">
-                                                <span>PHP</span>
-                                                <span>40%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-            </div>
-
-            <!-- Mục Tiêu -->
-
-            <div id=" target-id" class="js-active  target">
-                <ul class="self__list">
-                    <li class="self-item">
-                        <h1 class="self-item-heading">Giới thiệu</h1>
-                    </li>
-                    <li class="self-item">
-                        <h2 class="self-item-body">Những dự án nổi bật của mình</h2>
-                        <div class="row self-row">
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://github.com/TheanIshtar/login-swing" class="self-item-body-link">
-                                        <img src="./asscet/img/project/login-frame.gif" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Giao diện đăng nhập desktop-app</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://theanishtar.github.io/tictactoe/" class="self-item-body-link">
-                                        <img src="./asscet/img/project/tictactoe-play.gif" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Game cờ ca-rô</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://github.com/TheanIshtar/simulation-sort-algorithm" class="self-item-body-link">
-                                        <img src="./asscet/img/project/simulation-sort-algorithm.gif" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Phần mềm mô phỏng các thuật toán sắp xếp</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://github.com/TheanIshtar/PCInforManager_Javaswing" class="self-item-body-link">
-                                        <img src="./asscet/img/project/productManager.png" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Quản lí thông tin cửa hàng laptop</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://theanishtar.github.io/Calculator/" class="self-item-body-link">
-                                        <img src="./asscet/img/project/calculator.png" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Máy tính điện tử</span>
-                                </div>
-
-                            </div>
-
-                            <!-- <div class="col l-6">
-                                <div class="zoom">
-                                    <a href="https://theanishtar.github.io/Clock/" class="self-item-body-link">
-                                        <img src="./asscet/img/project/clock.png" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Đồng hồ điện tử</span>
-                                </div>
-                            </div> -->
-
-                            <div class="col l-6">
-                                <div class="zoom">
-
-                                    <a href="https://theanishtar.github.io/Todolist/" class="self-item-body-link">
-                                        <img src="./asscet/img/project/TodoList.png" alt="" class="self-item-body-img">
-                                    </a>
-                                    <span class="self-item-body-text">Todo List</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- sở thích -->
-            <div id=" interest-id" class="js-active  interest">
-                <h1 class="interest-header">Ưa thích</h1>
-                <ul class="interest-list">
-                    <li class="interest-item">
-                        <h3 class="Education__item-head">
-                            <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="hover" colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
-                            </lord-icon>
-                            Đọc sách
-
-                        </h3>
-                        <div class="row ">
-
-                            <div class="col-pc l-2 m-3 c-5">
-                                <div class="interest__img">
-
-                                    <img class="interest-item" src="./asscet/img/dac-nhan-tam.png" alt="sách đắc nhân tâm">
-                                </div>
-                            </div>
-                            <div class="col-pc l-2 m-3 c-5">
-                                <div class="interest__img">
-
-                                    <img class="interest-item" src="./asscet/img/luocSuLoaiNguoi.png" alt="sách llược sử loài người ">
-                                </div>
-                            </div>
-
-                            <div class="col-pc l-2 m-3 c-5">
-                                <div class="interest__img">
-
-                                    <img class="interest-item" src="./asscet/img/kheoannoi.jpg" alt="sách khéo ăn khéo nói">
-                                </div>
-                            </div>
-
-                            <!-- <div class="col-pc l-2 m-3 c-5">
-                                                    <div class="interest__img">
-
-                                                        <img class="interest-item" src="./asscet/img/nghe-thuat-dam-phan-donald-j.-trump-&-tony-schwartz.jpg" alt="sách nghệ thuật đàm phán - Donald Trump">
-                                                    </div>
-                                                </div> -->
-                            <div class="col-pc l-2 m-3 c-5">
-                                <div class="interest__img">
-
-                                    <img class="interest-item" src="./asscet/img/code-dao-ki-su.jpg" alt="sách nghỉ lớn để thành công">
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </li>
-                    <li class="interest-item">
-                        <h3 class="Education__item-head">
-                            <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="hover" colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
-                            </lord-icon>
-                            Trò Chơi Và Đam Mê
-
-                        </h3>
-                        <a href="https://www.chess.com/" class="interest__play">
-                            <img class="interest__play-img" src="./asscet/img/chess.jpg">
-                            <div class="interest__play-text">
-                                <span class="interest__play-heading">Cờ vua</span>
-                                <p class="interest__play-mota">Cờ vua là môn thể thao mình yêu thích nhất</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="interest__play">
-                            <img class="interest__play-img" src="./asscet/img/camp.jpg" alt="">
-                            <div class="interest__play-text">
-                                <span class="interest__play-heading">Cắm trại</span>
-                                <p class="interest__play-mota">Mình thường tạo những buổi cắm trại cùng bạn bè sau những giờ làm việc và học tập căng thẳng</p>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        </div>
-
-
-
-
-    </main>
+	<div class="content">
+		<header>
+			<div class="logo">
+				<span style="color: rgb(50, 175, 175);"><a href="">Yarn Dev</a></span>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li><a href="project.html">Project</a></li>
+					<li><a href=""><i class='bx bx-moon'></i></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="head">
+				<div class="left">
+					<h1>Tran Huu Dang</h1>
+					<div class="contact">
+						<button>CV</button>
+						<button><i class='bx bx-envelope'></i></button>
+						<button><i class='bx bxl-github'></i></button>
+						<button><i class='bx bxl-linkedin-square'></i></button>
+						<button><i class='bx bxl-twitter'></i></button>
+						<button><i class='bx bxl-facebook-square'></i></button>
+						<button><i class='bx bxl-youtube'></i></button>
+						<button><i class='bx bxl-tiktok'></i></button>
+					</div>
+					<div class="about">
+						<p>Hi, i'm Tran Huu Dang. You can call me's Yarn</p>
+
+						<p>I like technology and other work with computer. I am a developer in the back-end website fields
+							(NodeJS and Spring). <br> In addition, I also have knowledge of technologies such as AngularJS,
+							VueJS,
+							TaiwindCSS, Javaswing. <br>I understand tools like github ...
+						</p>
+						<p>Connect with my linkedin to discuss about work, or github me to share interesting knowledge ^^</p>
+
+					</div>
+				</div>
+
+				<div class="right">
+					<img src="https://zxh.io/img/avatar.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="education">
+				<h1>Education</h1>
+				<div class="row">
+					<div class="left">
+						FPT Polytechnic Collect
+					</div>
+					<div class="right">
+						2022-2024
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="left">
+						M.S. in Computer Science, Boston University
+					</div>
+					<div class="right">
+						021-2023
+					</div>
+				</div> -->
+
+			</div>
+
+			<div class="publications">
+				<h1>Publications</h1>
+
+				<div class="row">
+					<div class="left">
+						<img src="https://zxh.io/img/avatar.jpg" alt="">
+					</div>
+
+					<div class="right">
+						<p class="title">
+							TokenFlow: Rethinking Fine-grained Cross-modal Alignment in Vision-Language Retrieval
+						</p>
+						<p class="auth">
+							Xiaohan Zou, Changqiao Wu, Lele Cheng, and Zhongyuan Wang
+
+						</p>
+						<p class="time">Preprint, 2022</p>
+
+						<p><a href="">more</a></p>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">
+						<img src="https://zxh.io/img/avatar.jpg" alt="">
+					</div>
+
+					<div class="right">
+						<p class="title">
+							TokenFlow: Rethinking Fine-grained Cross-modal Alignment in Vision-Language Retrieval
+						</p>
+						<p class="auth">
+							Xiaohan Zou, Changqiao Wu, Lele Cheng, and Zhongyuan Wang
+
+						</p>
+						<p class="time">Preprint, 2022</p>
+
+						<p><a href="">more</a></p>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="experience">
+				<h1>Experience</h1>
+				<div class="row">
+					<div class="left">
+						Tutor online for students at FPT Polytechnic
+					</div>
+					<div class="right">
+						2021–2023
+					</div>
+				</div>
+
+				<!-- <div class="row">
+					<div class="left">
+						Machine Learning Engineer Intern, Kuaishou, Beijing, China
+					</div>
+					<div class="right">
+						2021–2022
+					</div>
+				</div> -->
+			</div>
+
+			<div class="miscellaneous">
+				<h1>Miscellaneous</h1>
+				<ul>
+					<li>🚀 This personal website is built with Astro, Solid and UnoCSS</li>
+					<li>🧐 Here are two “interesting” versions of my portfolio/cv: portfolio.zxh.io, resume.zxh.io</li>
+					<li>🎃 Renovamen is a Latin word means renewal</li>
+					<li>🖥 Ex-OIer/ACMer</li>
+					<li>🛠 Like to contribute to open-source machine learning and frontend projects in spare time</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		© Yarn Dev 2023 · A dragon lost in human world
+	</footer>
 </body>
 
 </html>
-
-<script src="./asscet/js.js"></script>

@@ -1,0 +1,352 @@
+body {
+	background-color: #374151;
+
+}
+
+* {
+	letter-spacing: 0.3px;
+}
+
+a {
+	color: #41bfe6;
+	text-decoration: none;
+}
+
+header {
+	align-items:
+		center;
+	background-color:
+		#374151;
+	color:
+		#e5e7eb;
+	display:
+		flex;
+	font-family:
+		system-ui;
+	justify-content:
+		space-between;
+	line-height:
+		24px;
+	padding:
+		0px 20px;
+}
+
+header .logo {
+	color:
+		#ffffff;
+	display: inline;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+header .menu ul {
+	display: flex;
+}
+
+header .menu ul li {
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+header .menu ul li a {
+	color:
+		#ffffff;
+	line-height:
+		24px;
+	margin:
+		0px 0px 0px 4px;
+	text-decoration: none;
+}
+
+.container {
+	padding: 0px 250px;
+	color:
+		#e5e7eb;
+	flex-basis:
+		0%;
+	line-height:
+		24px;
+	margin:
+		0px 0px 24px;
+}
+
+.container .head {
+	display: flex;
+}
+
+.container .head .left {
+	color:
+		#e5e7eb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:
+		17.5px;
+	font-weight:
+		600;
+	line-height:
+		50.625px;
+	margin:
+		16px 0px;
+}
+
+.container .head .left .contact {
+	display: flex;
+}
+
+.container .head .left .contact button {
+	align-items:
+		center;
+	background-color:
+		#6B7280;
+	border-radius:
+		4px;
+	color:
+		#e5e7eb;
+	display:
+		flex;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:
+		18px;
+	line-height:
+		20px;
+	margin:
+		0px 5px 5px 0px;
+	padding:
+		0px 12px;
+	border: none;
+	height: 30px;
+	font-weight: 600;
+}
+
+.container .head .left .about p {
+	color:
+		#e5e7eb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:
+		15px;
+	line-height:
+		27.9px;
+	margin:
+		18px 0px;
+	font-weight: 400;
+}
+
+.container .head .right {
+	border-radius:
+		6px;
+	box-shadow:
+		#000000 0px 0px 0px 0px;
+	color:
+		#e5e7eb;
+	font-size:
+		18px;
+	line-height:
+		28px;
+	margin:
+		0px 0px 4px;
+	padding-top: 50px;
+}
+
+.container .head .right img {
+	width: 100px;
+	border-radius:
+		4px;
+	color:
+		#e5e7eb;
+	font-size:
+		18px;
+	line-height:
+		28px;
+}
+
+.education,
+.publications,
+.miscellaneous {
+	padding-bottom: 40px;
+}
+
+.miscellaneous {
+	margin-top: 90px;
+}
+
+.miscellaneous ul li {
+	color:
+		#e5e7eb;
+	font-size:
+		16px;
+	font-weight:
+		0;
+	line-height:
+		30.75px;
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.education h1,
+.publications h1,
+.miscellaneous h1,
+.experience {
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 550;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: solid 0.5px rgba(203, 203, 203, 0.511);
+	padding: 10px 0px;
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.publications .row .left img {
+	width: 200px;
+}
+
+.publications .right {
+	padding-left: 30px;
+}
+
+.publications .right .title {
+	color:
+		#e5e7eb;
+	display:
+		inline;
+	font-size:
+		18px;
+	font-weight:
+		700;
+	line-height:
+		24.75px;
+}
+
+footer {
+
+	text-align: center;
+	color:
+		#e5e7eb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:
+		15px;
+	line-height:
+		27.9px;
+	margin:
+		18px 0px;
+	font-weight: 400;
+	margin-top: 50px;
+}
+
+.box .left .bot {
+	color:
+		#e5e7eb;
+	font-size:
+		13px;
+	line-height:
+		20px;
+	margin:
+		4px 0px 0px;
+	font-weight: 0;
+}
+
+
+
+.box {
+	margin-right: 20px;
+	border: solid 0.3px rgba(173, 173, 173, 0.389);
+	width: 50%;
+	height: 80px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* PC */
+@media (min-width: 64em) {
+	.container .boxs {
+		display: flex;
+	}
+}
+
+.box .left .top {
+	font-size: 16px;
+	margin-bottom: 15px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+	display: inline-flex;
+}
+
+.box .left .top .tech {
+	margin-left: 20px;
+}
+
+.box .left .top .tech i {
+	font-weight: 0;
+	font-size: 18px;
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.box .left .bot {
+	font-family: 'Nunito', sans-serif;
+	opacity: 0.6;
+}
+
+.box .right {
+	display: flex;
+	align-items: center;
+}
+
+.box .right i {
+	font-size: 35px;
+	opacity: 0.6;
+
+}
+
+.box .right {
+	padding-left: 16px;
+}
+
+.box:hover {
+	cursor: pointer;
+	background-color: #6b72801d;
+}
+
+.box {
+	margin-bottom: 20px;
+}
+
+.head .left span {
+	font-size: 15px;
+	font-weight: 0;
+	font-family: 'Comfortaa', cursive;
+	margin-left: 10px
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	.container {
+		padding: 0px 25px;
+	}
+
+	img {
+		display: none;
+	}
+
+	.publications .right {
+		padding-left: 0px;
+	}
+
+
+	.box {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+}
+
+.boxs a {
+	color: white;
+}
