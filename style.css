@@ -1,6 +1,7 @@
 body {
 	background-color: #374151;
 	font-family: "Computer Modern Sans", sans-serif;
+	font-size: 18px;
 }
 
 * {
@@ -36,7 +37,7 @@ header .logo {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 28px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
 }
 
 header .menu ul {
@@ -59,7 +60,7 @@ header .menu ul li a {
 }
 
 .container {
-	padding: 0px 250px;
+	padding: 0px 350px;
 	color:
 		#e5e7eb;
 	flex-basis:
@@ -72,6 +73,7 @@ header .menu ul li a {
 
 .container .head {
 	display: flex;
+	justify-content: space-between;
 }
 
 .container .head .left {
@@ -88,8 +90,17 @@ header .menu ul li a {
 		16px 0px;
 }
 
+.container .head .left h1 {
+	font-size: 40.5px;
+}
+
 .container .head .left .contact {
 	display: flex;
+}
+
+.container .head .left .contact .wrap {
+	display: flex;
+	margin-bottom: 3px;
 }
 
 .container .head .left .contact button {
@@ -119,7 +130,7 @@ header .menu ul li a {
 }
 
 .container .head .left .contact button a {
-	color: white
+	color: white;
 }
 
 .container .head .left .about p {
@@ -165,8 +176,10 @@ header .menu ul li a {
 
 .education,
 .publications,
-.miscellaneous {
-	padding-bottom: 40px;
+.miscellaneous,
+.about,
+.projects {
+	padding-bottom: 90px;
 }
 
 .miscellaneous {
@@ -193,6 +206,10 @@ header .menu ul li a {
 	/* font-family: 'Rubik', sans-serif;
 	font-family: 'Ubuntu', sans-serif; */
 	font-weight: 550;
+}
+
+.title h1 {
+	font-size: 31.5px;
 }
 
 .row {
@@ -226,6 +243,10 @@ header .menu ul li a {
 		24.75px;
 }
 
+.projects .main {
+	margin-top: 50px;
+}
+
 footer {
 
 	text-align: center;
@@ -246,7 +267,7 @@ footer {
 	color:
 		#e5e7eb;
 	font-size:
-		13px;
+		16px;
 	line-height:
 		20px;
 	margin:
@@ -274,7 +295,7 @@ footer {
 }
 
 .box .left .top {
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 15px;
 	/* font-family: 'Nunito', sans-serif; */
 	font-weight: 500;
@@ -342,6 +363,11 @@ h3 {
 		padding: 0px 15px;
 	}
 
+	.container .head .left .contact {
+		display: block;
+
+	}
+
 	img {
 		display: none;
 	}
@@ -350,6 +376,10 @@ h3 {
 		padding-left: 0px;
 	}
 
+	.experience .left,
+	.education .left {
+		width: 70%;
+	}
 
 	.box {
 		width: 90%;
@@ -359,8 +389,20 @@ h3 {
 	.box {
 		height: auto;
 	}
+
+	#avatar {
+		display: block;
+		margin-top: -8px;
+	}
 }
 
 .boxs a {
 	color: white;
+}
+
+.undeveloped {
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	margin: 200px 0px;
 }
