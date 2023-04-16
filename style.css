@@ -357,6 +357,10 @@ h3 {
 	margin-left: 10px
 }
 
+#avatar {
+	width: 150px;
+}
+
 /* Mobile */
 @media (max-width: 46.1875em) {
 	.container {
@@ -393,6 +397,7 @@ h3 {
 	#avatar {
 		display: block;
 		margin-top: -8px;
+		width: 150px;
 	}
 }
 
