@@ -14,6 +14,7 @@
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css"
 		href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+	<link rel="stylesheet" href="animation.css">
 	<title>Theanishtar | Home</title>
 </head>
 
@@ -33,7 +34,7 @@
 		</header>
 
 		<div class="container">
-			<div class="head">
+			<div class="head item">
 				<div class="left">
 					<div class="bounce_auto">
 						<img src="avt.png" id="avt" alt="" class="bounce">
@@ -63,10 +64,8 @@
 										class='bx bxl-twitch'></i> </button></a>
 							<a href="https://www.tiktok.com/@theanishtar" target="_blank" rel="noopener noreferrer"><button><i
 										class='bx bx-phone-call'></i> </button></a>
-
 						</div>
 					</div>
-
 				</div>
 
 				<div class="right">
@@ -74,19 +73,17 @@
 				</div>
 
 			</div>
-			<div class="about">
+			<div class="about item">
 				<p>Hi, i'm Tran Huu Dang. You can call me's Theanishtar</p>
-
 				<p>I like technology and other work with computer. I am a developer in the back-end website fields
 					(NodeJS and Spring). <br> In addition, I also have knowledge of technologies such as AngularJS,
 					VueJS,
 					TaiwindCSS, Javaswing. <br>I understand tools like github ...
 				</p>
 				<p>Connect with my linkedin to discuss about work, or github me to share interesting knowledge ^^</p>
-
 			</div>
 
-			<div class="education title">
+			<div class="education title item">
 				<h1>Education</h1>
 				<div class="row">
 					<div class="left">
@@ -107,11 +104,11 @@
 
 			</div>
 
-			<div class="projects title">
-				<h1>Projects</h1>
+			<div class="projects title item">
+				<h1 class="">Projects</h1>
 
 				<div class="main">
-					<div class="webapp">
+					<div class="webapp showtoTop delay-02">
 						<h3>Simulation Algorithm</h3>
 						<div class="boxs">
 							<a href="https://github.com/TheanIshtar/simulation-sort-algorithm" class="box" target="_blank">
@@ -150,7 +147,7 @@
 						</div>
 
 					</div>
-					<div class="webapp">
+					<div class="webapp showtoTop delay-04">
 						<h3>Desktop Application</h3>
 						<div class="boxs">
 							<a href="https://github.com/TheanIshtar/DAVISY-PRO1041" class="box" target="_blank">
@@ -229,10 +226,11 @@
 
 						</div>
 					</div>
-					<div class="webapp">
+					<div class="webapp showtoTop delay-06">
 						<h3>Website Application</h3>
 						<div class="boxs">
-							<a href="https://github.com/TheanIshtar/Rainbow-Flix" class="box" target="_blank">
+							<a href="https://github.com/TheanIshtar/Rainbow-Flix" class="box showtoTop delay-04"
+								target="_blank">
 								<div class="left">
 									<div class="top">
 										Rainbow Flix
@@ -251,7 +249,7 @@
 								</div>
 							</a>
 
-							<a href="https://github.com/TheanIshtar/frog-quiz" class="box" target="_blank">
+							<a href="https://github.com/TheanIshtar/frog-quiz" class="box showtoTop delay-02" target="_blank">
 								<div class="left">
 									<div class="top">
 										Frog Quiz
@@ -339,14 +337,17 @@
 				</div> -->
 			</div>
 
-			<div class="miscellaneous title">
+			<div class="miscellaneous title item">
 				<h1>Miscellaneous</h1>
 				<ul>
-					<li>🚀 My projects mainly focus on software running on Windows and website-apps</li>
-					<li>🧐 My Skils: Java, JavaScript, SQL Server, NodeJS, MongoDB, Firebase</li>
-					<li>🎃 TheanIshtar is inspired by the Egyptian language</li>
-					<li>🖥 I have creativity and am always exploring new things</li>
-					<li>🛠 Like to contribute to open-source machine learning and frontend projects in spare time</li>
+					<li class="showtoTop delay-02">🚀 My projects mainly focus on software running on Windows and
+						website-apps</li>
+					<li class="showtoTop delay-04">🧐 My Skils: Java, JavaScript, SQL Server, NodeJS, MongoDB, Firebase
+					</li>
+					<li class="showtoTop delay-06">🎃 TheanIshtar is inspired by the Egyptian language</li>
+					<li class="showtoTop delay-08">🖥 I have creativity and am always exploring new things</li>
+					<li class="showtoTop delay-1">🛠 Like to contribute to open-source machine learning and frontend
+						projects in spare time</li>
 				</ul>
 			</div>
 		</div>
@@ -355,6 +356,21 @@
 	<footer>
 		© Theanishtar 2023 · A dragon lost in human world
 	</footer>
+
+
+	<script>
+		let items = document.querySelectorAll('.item');
+
+		document.addEventListener('scroll', (event) => {
+			items.forEach(item => {
+				if (item.offsetTop - window.scrollY < 350) {
+					item.classList.add('active');
+				} else {
+					item.classList.remove('active');
+				}
+			})
+		})
+	</script>
 </body>
 
 </html>

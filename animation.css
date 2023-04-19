@@ -1,0 +1,39 @@
+.showtoTop {
+	opacity: 0;
+}
+
+.active .showtoTop {
+	animation: showTop 1s ease-in-out 1 forwards;
+}
+
+@keyframes showTop {
+	from {
+		opacity: 0;
+		transform: translate(0, 100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+.delay-02 {
+	animation-delay: 0.2s !important;
+}
+
+.delay-04 {
+	animation-delay: 0.4s !important;
+}
+
+.delay-06 {
+	animation-delay: 0.6s !important;
+}
+
+.delay-08 {
+	animation-delay: 0.8s !important;
+}
+
+.delay-1 {
+	animation-delay: 1s !important;
+}
