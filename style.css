@@ -345,8 +345,46 @@ footer {
 	transition: all 0.2s ease-out;
 }
 
-.wrap button:hover i {
+/* .wrap button:hover i {
 	color: #41bfe6;
+} */
+
+#leetcode,
+#hackerrank {
+	width: 18px;
+	fill: rgb(255, 255, 255);
+}
+
+.wrap button:hover #facebook {
+	color: #007bff;
+}
+
+.wrap button:hover #youtube {
+	color: #ff4e4e;
+}
+
+.wrap button:hover #linkedin {
+	color: #0073ff;
+}
+
+.wrap button:hover #github {
+	color: #9a56ff;
+}
+
+.wrap button:hover #leetcode {
+	fill: #bd9400;
+}
+
+.wrap button:hover #hackerrank {
+	fill: #0ac316;
+}
+
+.wrap button:hover #tiktok {
+	color: #39373b;
+}
+
+.wrap button:hover #twitter {
+	color: #0084ff;
 }
 
 /* bounce effect */
