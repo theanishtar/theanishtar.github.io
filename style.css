@@ -145,9 +145,6 @@ header .menu ul li a {
 	font-size: 40.5px;
 }
 
-.container .head .left .contact {
-	display: flex;
-}
 
 .container .head .left .contact .wrap {
 	display: flex;
@@ -299,7 +296,6 @@ header .menu ul li a {
 }
 
 footer {
-
 	text-align: center;
 	color:
 		#e5e7eb;
@@ -472,7 +468,6 @@ footer {
 }
 
 .bounce_auto {
-
 	-webkit-animation-duration: 3s;
 	animation-duration: 5s;
 	-webkit-animation-fill-mode: both;
@@ -484,21 +479,6 @@ footer {
 	animation-name: bounce_auto;
 }
 
-/* PC */
-@media (min-width: 64em) {
-	#avt {
-		display: none;
-	}
-
-	#avatar {
-		padding-right: 30px;
-		margin-top: -30px;
-	}
-
-	.container .boxs {
-		display: flex;
-	}
-}
 
 .box .left .top {
 	font-size: 18px;
@@ -581,7 +561,6 @@ h3 {
 
 	.container .head .left .contact {
 		display: block;
-
 	}
 
 	.publications .right {
@@ -635,4 +614,30 @@ h3 {
 	color: rgb(255, 255, 255);
 	text-align: center;
 	margin: 200px 0px;
+}
+
+
+/* PC */
+@media (min-width: 64em) {
+	#avt {
+		display: none;
+	}
+
+	#avatar {
+		padding-right: 30px;
+		margin-top: -30px;
+		width: 200px;
+	}
+
+	.container .boxs {
+		display: flex;
+	}
+
+	.contact {
+		display: block;
+	}
+
+	.contact .wrap {
+		display: block;
+	}
 }
