@@ -616,6 +616,19 @@ h3 {
 	margin: 200px 0px;
 }
 
+.appearance,
+.experience {
+	margin-bottom: 100px;
+}
+
+.experience .row {
+	margin-bottom: 30px;
+}
+
+.appearance img {
+	width: 100px;
+	padding-right: 50px;
+}
 
 /* PC */
 @media (min-width: 64em) {
