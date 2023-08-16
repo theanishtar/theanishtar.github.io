@@ -1,0 +1,99 @@
+.pro {
+	margin-bottom: 80px;
+}
+
+.right p {
+	color: #e5e7eb;
+	font-size: 22px;
+	font-weight: 550;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.technical {
+	/* color: #f3f4f6;
+	display: flex;
+	line-height: 24px;
+	justify-content: center;
+	max-width: 90%; */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	/* Khoảng cách giữa các thẻ span */
+	justify-content: center;
+}
+
+.technical span {
+	/* background-color: #a3e635;
+	border-radius: 6px;
+	color: #365314;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 4px 8px;
+	padding-top: 8px;
+	margin: 0px 10px 20px 10px;
+	display: flex;
+	height: 30px; */
+	display: inline-flex;
+	align-items: center;
+	max-width: 200px;
+	/* Giới hạn chiều rộng tối đa */
+	padding: 5px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.technical .nodejs {
+	background-color: #0f271f48;
+	color: #00ff66;
+}
+
+.technical .expressjs {
+	background-color: #00c483c2;
+	color: #131d17;
+}
+
+.technical .jwt {
+	background-color: #21022998;
+	color: #00c9f6;
+}
+
+.technical .scss {
+	background-color: #006da057;
+	color: #ea00daba;
+}
+
+.technical .mysql {
+	background-color: #00a1dc57;
+	color: #ea8c00ba;
+}
+
+.technical span img {
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+	margin-top: -5px
+}
+
+
+/* PC */
+@media (min-width: 64em) {}
+
+
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	img {
+		display: block;
+		width: 100%;
+	}
+
+
+}
