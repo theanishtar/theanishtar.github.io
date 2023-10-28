@@ -203,6 +203,14 @@ header .menu ul li a {
 	padding-bottom: 90px;
 }
 
+.projects .right a p {
+	color: var(--text-color);
+}
+
+.dark-mode .projects .right a p {
+	color: var(--text-color-dark);
+}
+
 .miscellaneous {
 	margin-top: 90px;
 }
