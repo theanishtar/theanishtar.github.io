@@ -16,20 +16,47 @@
 		href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
 	<link rel="stylesheet" href="style/projects.css">
 	<link rel="stylesheet" href="style.css">
-	<title>Davis | Home</title>
+	<link rel="stylesheet" href="animation.css">
+	<script src="js/main.js"></script>
+	<script src="js/mode.js"></script>
+	<title>Davis</title>
 </head>
 
 <body>
+	<div id="scroll">
+		<button id="scrollToTopBtn" onclick="scrollOnTop()">
+			<svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+				<path
+					d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z">
+				</path>
+			</svg>
+			<p class="text"></p>
+		</button>
+
+	</div>
 	<div class="content">
 		<header>
 			<div class="logo">
-				<span style="color: rgb(50, 175, 175);"><a href="">hi@Davis</a></span>
+				<a href="">
+					<span>
+						hi@Davis
+					</span>
+					<span class="target" style="margin-left: -6px;">
+						<svg style="margin-bottom: -2.2px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+							width="1em" height="1em">
+							<path fill="currentColor"
+								d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+						</svg>
+					</span>
+					<span class="blink"
+						style="margin-left: -10px; padding-top: -10px; animation: blinker 1s none infinite; ">ˍ</span>
+				</a>
 			</div>
-
 			<div class="menu">
 				<ul>
 					<li><a href="blog.html">Blog</a></li>
-					<li><a href=""><i class='bx bx-moon'></i></a></li>
+					<li><a style="cursor: pointer;"><i onclick="changesIcon(this)"
+								class='bx bx-sun bx-moon sun-moon'></i></a></li>
 				</ul>
 			</div>
 		</header>
@@ -40,7 +67,8 @@
 					<div class="bounce_auto">
 						<img src="avt.png" id="avt" alt="" class="bounce">
 					</div>
-					<h1 id="uname">Tran Huu Dang</h1>
+					<h1 id="uname">Tran Huu Dang <span id="subname"></span></h1>
+					<p id="desc">Java Developer</p>
 					<div class="contact">
 						<div class="wrap">
 							<a href="https://github.com/dangtranhuu/RESUME/blob/main/CV%20Tran%20Huu%20Dang%20-%20TranHuuDang-InternDeveloper.pdf"
@@ -55,9 +83,11 @@
 								</button></a> -->
 							<a href="https://leetcode.com/tranhuudang" target="_blank">
 								<button>
-									<svg id="leetcode" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+									<svg id="leetcode" viewBox="0 0 24 24" role="img"
+										xmlns="http://www.w3.org/2000/svg">
 										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+										</g>
 										<g id="SVGRepo_iconCarrier">
 											<title>LeetCode icon</title>
 											<path
@@ -72,7 +102,8 @@
 								<button>
 									<svg id="hackerrank" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+										</g>
 										<g id="SVGRepo_iconCarrier">
 											<path
 												d="M16 0c1.714 0 13 6.516 13.854 8 0.859 1.484 0.859 14.516 0 16s-12.141 8-13.854 8c-1.714 0-13-6.516-13.859-8-0.854-1.484-0.854-14.516 0-16 0.859-1.484 12.146-8 13.859-8zM19.063 9.068c-0.193 0-0.349 0.151-0.349 0.344v5.167h-5.427v-5.37h0.932c0.188 0 0.339-0.151 0.339-0.344 0-0.125-0.068-0.234-0.161-0.292l-2.099-2.010c-0.063-0.089-0.188-0.146-0.302-0.146-0.109 0-0.214 0.057-0.276 0.141l-2.24 2.016c-0.094 0.063-0.161 0.167-0.161 0.292 0 0.188 0.151 0.344 0.344 0.344h0.938l0.010 13.38c0 0.193 0.146 0.344 0.339 0.344h1.99c0.188 0 0.344-0.151 0.344-0.344v-5.339h5.432v5.536h-0.932c-0.193 0-0.344 0.156-0.344 0.344 0 0.125 0.068 0.234 0.161 0.292l2.104 2.016c0.057 0.083 0.188 0.146 0.302 0.146s0.208-0.063 0.276-0.146l2.24-2.016c0.094-0.057 0.161-0.167 0.161-0.292 0-0.188-0.156-0.344-0.344-0.344h-0.938l-0.010-13.375c0-0.198-0.151-0.349-0.339-0.349h-1.99z">
@@ -85,14 +116,16 @@
 						<div class="wrap">
 							<a target="_blank" href="https://www.linkedin.com/in/tranhuudang"><button><i
 										class='bx bxl-linkedin-square' id="linkedin"></i></button></a>
-							<a href="https://www.youtube.com/@froggydev" target="_blank"><button><i class='bx bxl-youtube'
-										id="youtube"></i></button></a>
+							<a href="https://www.youtube.com/@froggydev" target="_blank"><button><i
+										class='bx bxl-youtube' id="youtube"></i></button></a>
 							<a target="_blank" href="https://www.facebook.com/dangdeveloper/"><button><i
 										class='bx bxl-facebook-square' id="facebook"></i></button></a>
-							<a href="https://www.tiktok.com/@theanishtar" target="_blank" rel="noopener noreferrer"><button><i
-										class='bx bxl-tiktok' id="tiktok"></i> </button></a>
-							<a href="https://www.tiktok.com/@theanishtar" target="_blank" rel="noopener noreferrer"><button><i
-										class='bx bxl-twitter' id="twitter"></i> </button></a>
+							<a href="https://www.tiktok.com/@theanishtar" target="_blank"
+								rel="noopener noreferrer"><button><i class='bx bxl-tiktok' id="tiktok"></i>
+								</button></a>
+							<a href="https://www.tiktok.com/@theanishtar" target="_blank"
+								rel="noopener noreferrer"><button><i class='bx bxl-twitter' id="twitter"></i>
+								</button></a>
 						</div>
 					</div>
 				</div>
@@ -169,12 +202,11 @@
 
 				<div class="row">
 					<div class="left">
-						<img
-							src="https://github.com/dangtranhuu/images/blob/main/programing/16-20-11-48-162384905795386933.png?raw=true"
+						<img src="https://github.com/dangtranhuu/images/blob/main/programing/16-20-11-48-162384905795386933.png?raw=true"
 							alt="" srcset="">
 					</div>
 					<div class="right">
-						<a style="color: white;"
+						<a
 							href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/du-an-phan-mem-quan-ly-ban-phu-kien-thiet-bi-di-dong-cua-sinh-vien-fpoly-can-tho-lot-mat-xanh-cua-giang-vien.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo">The
 							project "Davisy Store Manager" using Java Swing was highly appreciated by FPT lecturers
 							(10/10 mark) and
@@ -189,7 +221,7 @@
 							alt="" srcset="">
 					</div>
 					<div class="right">
-						<a style="color: white;"
+						<a
 							href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/nam-sinh-fpt-polytechnic-can-tho-tai-nang-sang-tao-he-thong-hoc-lap-trinh-bo-ich.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&gidzl=jGLlJD1wT3os6sbDsc9sFBuQOqp4ONa-g1vb7PrWAsZz73KSosOhFVeUCKYRCYKv-4vlI3HKJon7qtDwCm&fbclid=IwAR1bheYiv-1oFz1hZxqUAt2QNfJglmFDSPQhYhrmnWcay9zcfx3KbL9WnJE">The
 							project "Frog Quiz" using AngularJS, Firebase was highly appreciated by FPT lecturers
 							(10/10 mark) and
@@ -204,7 +236,7 @@
 							alt="" srcset="">
 					</div>
 					<div class="right">
-						<a style="color: white;" href="https://angurvad-5559e.web.app/">The
+						<a href="https://angurvad-5559e.web.app/">The
 							project "Angurvad" using VueJS is a ebook learning programing for student IT...</a> <a
 							href="https://angurvad-5559e.web.app/">More</a>
 					</div>
@@ -215,7 +247,7 @@
 							alt="" srcset="">
 					</div>
 					<div class="right">
-						<a style="color: white;" href="https://angurvad-5559e.web.app/">The
+						<a href="https://angurvad-5559e.web.app/">The
 							project "Rainbow Flix" using NodeJS, AngularJS is a watching movie website...</a> <a
 							href="https://angurvad-5559e.web.app/">More</a>
 					</div>
@@ -263,7 +295,8 @@
 								</span>
 							</div>
 							<div class="description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non posuere
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non
+								posuere
 								consectetur, justo erat semper enim, non hendrerit dui odio id enim.
 							</div>
 						</div>
@@ -297,13 +330,13 @@
 								</span>
 							</div>
 							<div class="description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non posuere
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non
+								posuere
 								consectetur, justo erat semper enim, non hendrerit dui odio id enim.
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 
@@ -326,7 +359,7 @@
 	</div>
 
 	<footer>
-		© Theanishtar 2023 · A dragon lost in human world
+		© Davis 2023 · A FrogDev at @FrogSageLand
 	</footer>
 
 	<!-- ANIMATION SCROLL -->
