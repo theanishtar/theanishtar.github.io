@@ -278,7 +278,7 @@ header .menu ul li a {
 
 footer {
 	text-align: center;
-	color: var(--contact-bc);
+	color: var(--contact-bc-dark);
 	/* font-family: 'Ubuntu', sans-serif; */
 	font-size: 15px;
 	line-height: 27.9px;
@@ -288,7 +288,7 @@ footer {
 }
 
 .dark-mode footer {
-	color: var(--contact-bc-dark);
+	color: var(--contact-bc);
 }
 
 .box .left .bot {
