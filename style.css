@@ -667,3 +667,7 @@ h3 {
 		opacity: 1;
 	}
 }
+
+#scrollToTopBtn {
+	display: none;
+}
