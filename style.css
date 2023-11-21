@@ -42,6 +42,7 @@ header {
     justify-content: space-between;
     line-height: 24px;
     padding: 0px 20px;
+    height: 50px;
 
     position: fixed;
     width: 100%;
@@ -59,7 +60,7 @@ header {
 }
 
 .h-shadow {
-    border-bottom: 1px solid rgba(110, 110, 110, 0.147);
+    border-bottom: 1px solid rgba(110, 110, 110, 0.385);
     /* Đường viền ở dưới */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.041);
 }
@@ -104,7 +105,7 @@ header .menu ul li a {
 
 
 .container {
-    padding: 0px 350px;
+    padding: 0px 300px;
     color: var(--text-color);
     flex-basis: 0%;
     line-height: 24px;
@@ -464,8 +465,9 @@ h3 {
 
 
 /* Mobile */
-@media (max-width: 46.1875em) {
-
+/* @media (max-width: 46.1875em) { */
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
     .head-mb {
         display: block;
     }
@@ -710,4 +712,12 @@ h3 {
 
 #scrollToTopBtn {
     display: none;
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #avatar {
+        width: 150px;
+    }
 }
