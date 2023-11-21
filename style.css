@@ -568,6 +568,7 @@ h3 {
 
 .experience .row {
     margin-bottom: 30px;
+    align-items: flex-start;
 }
 
 .appearance .right {
