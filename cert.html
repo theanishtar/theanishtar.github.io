@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="shortcut icon" href="avt.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/carosel.css">
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/mode.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carosel.js"></script>
+    <title>Davis</title>
+</head>
+
+<body>
+    <div id="scroll">
+        <button id="scrollToTopBtn" onclick="scrollOnTop()">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+                <path
+                    d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z">
+                </path>
+            </svg>
+            <p class="text"></p>
+        </button>
+
+    </div>
+    <div class="content">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <span>
+                        hi@Davis
+                    </span>
+                    <span class="target" style="margin-left: -6px;">
+                        <svg style="margin-bottom: -2.2px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                            width="1em" height="1em">
+                            <path fill="currentColor"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                        </svg>
+                    </span>
+                    <span class="blink"
+                        style="margin-left: -10px; padding-top: -10px; animation: blinker 1s none infinite; ">ˍ</span>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="head-text"><a href="#">Cert</a></li>
+                    <li><a href="#" class=" head-mb"><i class='bx bx-certification'></i></a></li>
+                    <li class="head-text"><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.html" class=" head-mb"><i class='bx bx-edit-alt'></i></a></li>
+                    <li><a style="cursor: pointer;"><i onclick="changesIcon(this)"
+                                class='bx bx-sun bx-moon sun-moon'></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="cert">
+
+            </div>
+
+            <div class="news title">
+                <h1>Appearance</h1>
+                <div class="carousel swiper">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <a href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/du-an-phan-mem-quan-ly-ban-phu-kien-thiet-bi-di-dong-cua-sinh-vien-fpoly-can-tho-lot-mat-xanh-cua-giang-vien.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="images/showImg/duan1.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="profile-details">
+                                    <img src="images/profile/nhuomtv.jpg" alt="" />
+                                    <div class="name-job">
+                                        <h3 class="name">Mr. Tran Van Nhuom</h3>
+                                        <h4 class="job">IT Teacher - FPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <a href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/nam-sinh-fpt-polytechnic-can-tho-tai-nang-sang-tao-he-thong-hoc-lap-trinh-bo-ich.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="images/showImg/fefw.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="profile-details">
+                                    <img src="images/profile/nghiaqh.jpg" alt="" />
+                                    <div class="name-job">
+                                        <h3 class="name">Mr. Quach Huu Nghia</h3>
+                                        <h4 class="job">IT Teacher - FPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <a target="_blank"
+                                        href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/dien-dan-truc-tuyen-tang-do-secondhand-tien-loi-made-by-sinh-vien-fpt-polytechnic-can-tho.html">
+                                        <img src="images/showImg/java5.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="profile-details">
+                                    <img src="images/profile/nhuomtv.jpg" alt="" />
+                                    <div class="name-job">
+                                        <h3 class="name">Mr. Tran Van Nhuom</h3>
+                                        <h4 class="job">IT Teacher - FPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <a href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/sinh-vien-fpt-polytechnic-can-tho-xuat-sac-hoan-thanh-vong-loai-cuoc-thi-vo-dich-tin-hoc-van-phong-the-gioi-mos.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="images/showImg/mos.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="profile-details">
+                                    <img src="images/profile/fpt.png" alt="" />
+                                    <div class="name-job">
+                                        <h3 class="name">Mr. Huynh Thanh Hoang</h3>
+                                        <h4 class="job">IT Teacher - FPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <img src="images/showImg/resume.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="profile-details">
+                                    <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/306545771_116266211223011_4583493279246203610_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s5bUDlZrD9cAX-xTigE&_nc_ht=scontent.fsgn5-5.fna&oh=00_AfALiD2NgdPT7vI1RwDbNc09GW-gxWI4bfFkmJw6yOEyEg&oe=6561BC06"
+                                        alt="" />
+                                    <div class="name-job">
+                                        <h3 class="name">Ms. Nguyen Thi Hanh</h3>
+                                        <h4 class="job">SK Teacher - FPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © Davis 2023 · A FrogDev at @FrogSageLand
+    </footer>
+
+    <!-- ANIMATION SCROLL -->
+    <!-- <script>
+		let items = document.querySelectorAll('.item');
+
+		document.addEventListener('scroll', (event) => {
+			items.forEach(item => {
+				if (item.offsetTop - window.scrollY < 350) {
+					item.classList.add('active');
+				} else {
+					item.classList.remove('active');
+				}
+			})
+		})
+	</script> -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carosel.js"></script>
+</body>
+
+</html>

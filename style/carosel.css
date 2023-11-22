@@ -101,3 +101,33 @@ body {
     margin: 0 0;
     font-family: 'Ubuntu', sans-serif;
 }
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .card .image-box img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        /* Đảm bảo hình ảnh đầy đủ chiều rộng của card */
+        height: 100%;
+        /* Đảm bảo hình ảnh đầy đủ chiều cao của card */
+        object-fit: scale-down;
+        /* Tùy chọn để giữ tỉ lệ khung và cắt bớt hình ảnh */
+    }
+}
+
+.dark-mode .swiper-pagination-bullet-active {
+    background-color: #f7f4f4;
+}
+
+.dark-mode .swiper-pagination-bullet {
+    background-color: #dfd9d9;
+}
+
+.dark-mode .profile-details .name {
+    color: #000000c6;
+}
+
+.dark-mode .profile-details .job {
+    color: #4d4d4d;
+}
