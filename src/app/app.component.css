@@ -1,0 +1,18 @@
+/* .skills {
+    display: flex;
+} */
+
+.skills span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.skills img {
+    width: 15px;
+    margin-top: -25px;
+    margin-bottom: 1px;
+}
+
+.skills span {
+    padding-bottom: -10px;
+}
