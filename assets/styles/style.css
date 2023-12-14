@@ -14,6 +14,11 @@
     letter-spacing: 0.3px;
 }
 
+@font-face {
+    font-family: cmu;
+    src: url(../font/cmu/cmunbl.ttf);
+}
+
 body {
     background-color: var(--background-color);
     font-family: "Computer Modern Sans", sans-serif;
@@ -299,6 +304,7 @@ header .menu ul li a {
 .projects .main {
     margin-top: 50px;
 }
+
 
 footer {
     text-align: center;

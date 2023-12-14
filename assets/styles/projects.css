@@ -133,3 +133,13 @@
 
 
 }
+
+.projects .author,
+.projects .author a {
+    margin-top: 10px;
+    color: #1772D0;
+}
+
+.projects .author span {
+    color: #000000;
+}
