@@ -189,3 +189,26 @@ body {
     /* Tùy chọn để giữ tỉ lệ khung và cắt bớt hình ảnh */
   }
 }
+
+.news .card .image-box .dark {
+  display: none;
+  /* Nếu cả hai class .dark-mode và .dark được áp dụng, display:none */
+}
+
+.dark-mode .news .card .image-box .light {
+  display: none;
+  /* Nếu cả hai class .dark-mode và .dark được áp dụng, display:none */
+}
+
+.dark-mode .news .card .image-box .dark {
+  display: block;
+  /* Nếu cả hai class .dark-mode và .dark được áp dụng, display:none */
+}
+
+.dark-mode .profile-details .name {
+  color: white;
+}
+
+.dark-mode .profile-details .job {
+  color: rgba(226, 226, 226, 0.679);
+}
