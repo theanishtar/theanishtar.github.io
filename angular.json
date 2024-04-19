@@ -27,7 +27,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/js/carosel.js",
+              "./src/assets/js/main.js",
+              "./src/assets/js/mode.js",
+              "./src/assets/js/swiper-bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: cmu;
-  src: url(../font/cmu/cmunbl.ttf);
+  src: url(../../assets/font/cmu.sans-serif-medium.ttf);
 }
 
 body {
