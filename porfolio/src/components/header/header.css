@@ -1,0 +1,37 @@
+/* HEADER */
+/* 
+.header .logo .target {
+  margin-left: -6;
+}
+
+.header .logo .target svg {
+  margin-bottom: -2.2;
+}
+
+.header .logo .blink {
+  margin-left: -10;
+  padding-top: -10;
+  animation: 'blinker 1s none infinite';
+} */
+.header .logo .target {
+  margin-left: -2px;
+}
+
+.header .logo .target svg {
+  margin-bottom: -2.2px;
+}
+
+.header .logo a .blink {
+  width: 40px;
+  /* Điều chỉnh độ dài của dấu ngang ở đây */
+  margin-left: -10px;
+  padding-top: -10px;
+  animation: blinker 1s none infinite;
+}
+
+/* CSS */
+#mode__icon {
+  outline: none;
+}
+
+#mode__icon:hover {}
