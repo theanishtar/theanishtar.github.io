@@ -1,0 +1,142 @@
+h2 {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: -50px;
+}
+
+.cert {
+  /* width: 1000px; */
+  max-width: 1053px;
+  position: relative;
+  /* display: flex; */
+  justify-content: flex-start;
+  /* Đổi từ 'center' thành 'flex-start' */
+  align-items: unset;
+  /* Xóa thuộc tính 'align-items' */
+}
+
+.cert .row {
+  justify-content: flex-start;
+  border: none;
+  /* display: flex; */
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  /* justify-content: space-between; */
+}
+
+.card {
+  background: #00000000;
+}
+
+.cert .card {
+  /* position: relative; */
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.cert .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.cert .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.cert .card:hover .face.face1 {
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.cert .card .face.face1 .content {
+  /* opacity: 0.2; */
+  transition: 0.5s;
+}
+
+.cert .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.cert .card .face.face1 .content img {
+  /* max-width: 100px; */
+  max-width: 100%;
+}
+
+.cert .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cert .card .face.face2 {
+  position: relative;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.cert .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.cert .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.cert .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.cert .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.card {
+  width: calc(25% - 20px);
+  /* Đảm bảo 4 thẻ card trên mỗi hàng */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px);
+    /* Hiển thị 3 thẻ card trên mỗi hàng khi màn hình thu nhỏ */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+    /* Hiển thị 2 thẻ card trên mỗi hàng khi màn hình thu nhỏ hơn */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    /* Hiển thị 1 thẻ card trên mỗi hàng khi màn hình nhỏ nhất */
+  }
+}
