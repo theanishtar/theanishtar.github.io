@@ -794,8 +794,8 @@ Hiện payment */
 }
 
 @media (max-width: 480px) {
-  .alert-message {
+  /* .alert-message {
     width: 95%;
     padding: 5px;
-  }
+  } */
 }
