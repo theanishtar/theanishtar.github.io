@@ -25,7 +25,7 @@
     <div class="mx-auto max-w-7xl py-16 px-4 sm:py-10 sm:px-6 lg:px-8" bis_skin_checked="1">
       <div class="text-center" bis_skin_checked="1">
 
-        <img class="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="./assets/img/avt.jpg" alt="">
+        <img class="avatar mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="./assets/img/avt.jpg" alt="">
 
         <p class="mt-5 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
           Trần Hữu Đang
@@ -143,6 +143,36 @@
               </a>
             </div>
           </div>
+
+          <div
+            class="relative flex items-center space-x-3 rounded-lg border border-indigo-300 bg-white px-6 py-5 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-indigo-400 p-4 shadow-md hover:shadow-xl"
+            bis_skin_checked="1">
+            <div class="min-w-0 flex-1" bis_skin_checked="1">
+              <a id="showAlert" href="#" class="focus:outline-none frame-contact">
+                <p class="icon text-xl"><img src="./assets/img/tpbank.webp" alt="" srcset=""></p>
+                <p class="text-xl font-medium text-gray-900">00932023330</p>
+              </a>
+            </div>
+          </div>
+
+          <div id="overlay" class="overlay hide"></div>
+
+          <div id="alertMessage" class="alert-message hide">
+            <img width="300px" src="./assets/img/payment.png" alt="" srcset="">
+          </div>
+
+          <script>
+            document.getElementById('showAlert').addEventListener('click', function (event) {
+              event.preventDefault(); // Prevent the default action of the link
+              document.getElementById('overlay').classList.add('show-overlay');
+              document.getElementById('alertMessage').classList.add('show-alert-message');
+            });
+
+            document.getElementById('overlay').addEventListener('click', function () {
+              document.getElementById('overlay').classList.remove('show-overlay');
+              document.getElementById('alertMessage').classList.remove('show-alert-message');
+            });
+          </script>
 
 
         </div>
