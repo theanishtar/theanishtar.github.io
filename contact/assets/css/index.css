@@ -746,6 +746,11 @@ video {
 
 /* 
 Hiện payment */
+
+.alert-message {
+  border-radius: 15px;
+}
+
 .overlay,
 .alert-message {
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -786,4 +791,10 @@ Hiện payment */
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 480px) {
+  .alert-message {
+    width: 300px;
+  }
 }
